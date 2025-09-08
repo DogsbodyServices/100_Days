@@ -1,0 +1,2 @@
+sudo pip install --upgrade pip
+sudo pip3 install ansible==4.7.0 #THe Sudo installs it globally for all users, else it's only for the user.

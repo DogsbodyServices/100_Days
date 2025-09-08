@@ -1,0 +1,20 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Install cronie package
+      ansible.builtin.package:
+        name: cronie
+        state: present
+
+    - name: Start crond service
+      ansible.builtin.service:
+        name: crond
+        state: started
+        enabled: true
+
+    - name: Add cron job for root user
+      ansible.builtin.cron:
+        name: "Sample cron job"
+        minute: "*/5"
+        user: root
+        job: "echo hello > /tmp/cron_text"

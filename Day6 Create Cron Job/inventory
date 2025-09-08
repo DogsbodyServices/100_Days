@@ -1,0 +1,3 @@
+stapp01 ansible_user=tony ansible_password=Ir0nM@n ansible_become_pass=Ir0nM@n
+stapp02 ansible_user=steve ansible_password=Am3ric@ ansible_become_pass=Am3ric@
+stapp03 ansible_user=banner ansible_password=BigGr33n ansible_become_pass=BigGr33n

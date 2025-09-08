@@ -1,0 +1,5 @@
+sudo systemctl status mariadb
+/var/lib/mysql non-empty/didnt exist
+sudo mkdir /var/lib/mysql
+sudo chown -R /var/lib/mysql
+sudo systemctl start mariadb

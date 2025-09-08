@@ -1,0 +1,3 @@
+ssh-keygen -t ecdsa
+ssh-copy-id tony@stapp01 # do with all 3 servers with correct users.
+sudo dnf install -y ansible
