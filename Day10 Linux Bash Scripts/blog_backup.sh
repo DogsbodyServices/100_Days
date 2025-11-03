@@ -10,5 +10,5 @@ echo "Blog directory zipped successfully."
 #echo "Backup copy created successfully."
 
 # Copy Archive file to remote server
-sshpass -p "H@wk3y3" scp /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup/xfusioncorp_blog.zip -o StrictHostKeyChecking=no
+sshpass -p "H@wk3y3" scp -o StrictHostKeyChecking=no /backup/xfusioncorp_blog.zip clint@stbkp01.stratos.xfusioncorp.com:/backup/xfusioncorp_blog.zip
 echo "Backup file copied to remote server successfully."
